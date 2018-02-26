@@ -1,0 +1,1037 @@
+/*css预设*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+html,
+body {
+  font-size: 13px;
+  font-family: "Microsoft YaHei", "Verdana", "arial";
+  color: #333;
+  _text-overflow: ellipsis;
+  background: #fff;
+}
+body{
+  margin-bottom: 50px;
+}
+input,
+textarea,
+select,
+button,i,b {
+  box-shadow: none;
+  font-family: "Microsoft YaHei", "Verdana", "arial";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: 'liga', 'kern';
+}
+ul li,
+ol li {
+  list-style: none;
+}
+a {
+  /* -webkit-font-smoothing: antialiased; */
+  text-decoration: none;
+  outline: none;
+}
+a:hover, a:visited, a:link, a:active {
+  color:#3e7def;
+}
+img {
+  border: none;
+}
+select {
+  display: inline-block;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 3px;
+  height: 28px;
+  line-height: 28px;
+  vertical-align: middle;
+}
+button{
+  border:none;
+  box-shadow: none;
+  border-radius:4px;
+  background:#345388;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: "Microsoft YaHei", "Verdana", "arial";
+}
+/*头部*/
+.top {
+  height: 40px;
+  background: #345388;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.head {
+  line-height: 40px;
+}
+.top a.logo {
+  position: relative;
+  float: left;
+  width: 140px;
+  height: 23px;
+  margin-top: 8px;
+  margin-right: 37px;
+}
+.top a.logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.top .head .nav {
+  position: relative;
+  float: left;
+  line-height: 40px;
+}
+.top .head .nav li {
+  position: relative;
+  float: left;
+}
+.tableBox h5 button.gotoReceive span{
+  color: #fff !important
+}
+.top .head .nav li a {
+  font-weight: normal;
+  position: relative;
+  float: left;
+  padding: 0 17px;
+  color: #fff;
+  font-size: 14px;
+}
+.top .head .nav li a:hover,
+.top .head .nav li a.active {
+  color: #072966;
+  background: #fff;
+  font-weight: normal
+}
+.top .one {
+  position: relative;
+  float: right;
+}
+.top .one li {
+  position: relative;
+  float: left;
+  margin-right: 18px;
+  color: #fff;
+}
+.top .one li a {
+  display: inline-block;
+  color: #fff;
+}
+.top .one li a.letter {
+  width: 22px;
+  height: 17px;
+  background: url(../images/sprite.png) no-repeat -1px -1px;
+  margin-top: 12px;
+}
+button{
+  position: relative;
+}
+.el-row{
+  /* margin-bottom: 15px */
+}
+/*==============Element Css Fixed==============*/
+/* input */
+/*通用样式*/
+.el-form-item .el-select,
+.el-form-item .el-input,
+.el-form-item .el-date-editor{
+  width: 100% ;
+}
+.el-input__inner{
+  height: 28px
+}
+.el-input input {
+  padding: 0 4px;
+}
+.el-form-item--mini.el-form-item{
+  margin-bottom: 15px
+}
+/* 一行三个时的输入框 */
+.input_2 label,.input_3 label {
+  font-size: 13px;
+  color: #333;
+  padding: 0 10px 0 0;
+}
+.el-form-item__content{
+  font-size: 13px
+}
+.el-dialog .landz_input_3 .el-form-item__content {
+  margin-left: 75px;
+  width: 170px;
+}
+.el-dialog .landz_input_2 .el-form-item__content {
+  margin-left: 75px;
+  width: 216px;
+}
+.landz_input_3 .el-form-item__content {
+  margin-left: 75px;
+  width: 250px;
+}
+.landz_input_3 .el-autocomplete {
+  width: 100%;
+}
+
+.landz_input_3 .el-input {
+  width: 100%;
+}
+.landz_input_3 .el-select {
+  width: 100%;
+}
+/* 一行4个时的输入框 */
+.landz_input_4 label {
+  font-size: 13px;
+  color: #333;
+  padding: 0 10px 0 0;
+}
+.landz_input_4 .el-form-item__content {
+  margin-left: 75px;
+  width: 170px;
+}
+.landz_input_4 .el-autocomplete {
+  width: 100%;
+}
+.landz_input_4 .el-input {
+  width: 100%;
+}
+.landz_input_4 .el-select {
+  width: 100%;
+}
+
+/* button */
+button.btn_hover {
+  height: 33px !important;
+  padding: 0 15px !important;
+}
+.btn_hover:hover {
+  background: rgba(93, 117, 160, 1) !important;
+}
+.btnBox{
+  margin-top:50px
+}
+/* table */
+.el-table {
+  font-size: 13px;
+}
+.el-table th {
+  font-size: 14px;
+}
+.el-table td {
+  padding: 10px 0;
+}
+
+.el-table .cell {
+  line-height: 24px;
+}
+.el-table td, .el-table th.is-leaf {
+  border-bottom: 1px solid #ddd;
+}
+/* 分页 */
+.el-pagination__jump {
+  margin-left: 14px;
+}
+.el-pagination__total {
+  margin-left: 20px;
+}
+.el-pagination__sizes {
+  margin-left: 80px;
+  position: absolute;
+}
+.el-pagination li,
+.el-pagination span,
+.el-pagination button,
+.el-pagination input {
+  height: 28px !important;
+  line-height: 28px !important;
+  font-size: 12px !important;
+}
+
+/* 字体 */
+.font_13 label {
+  font-size: 13px;
+  color: #333;
+  padding: 0 10px 0 0;
+}
+
+/* 弹层 */
+.el-message-box{
+  text-align: center
+}
+.el-message-box__content{
+  padding-bottom: 20px;
+}
+.el-dialog__title {
+  font-size: 16px;
+  line-height: 45px;
+  color: #303133;
+}
+.el-dialog__header {
+  height: 45px;
+  padding: 0 0 0 20px;
+}
+.el-dialog__headerbtn {
+  right: 20px;
+}
+.el-dialog__body {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-top: 1px solid #ddd;
+}
+
+/* 日期选择器 */
+.el-icon-date:before {
+  color: #3594dc;
+}
+/* label */
+.el-form-item__label {
+  font-size: 13px;
+  padding: 0 10px 0 0;
+  /* text-align: center; */
+  /* text-align-last: justify; */
+  text-align:right;
+  /* width: 75px */
+}
+.condition .landz_doubleSize label,
+.landz_doubleSize label {
+  line-height: 14px !important;
+}
+/* 必填项 */
+.el-form-item.is-required {
+  position: relative;
+}
+.el-form-item.is-required .el-form-item__label:before {
+  /* position: absolute;
+  left: -8px; */
+  margin-right: 0px;
+}
+/* icon */
+.icon-tongyong_shanchushoujihao {
+  color: #fe0019;
+}
+.icon-tongyong_tianjiashoujihao {
+  color: #3e7def;
+}
+/* 输入框后icon */
+.el-input__suffix {
+  text-align: right;
+}
+.el-input__suffix i {
+  display: inline-block;
+  width: 30px;
+  position: relative;
+  left: -4px;
+  line-height: 28px
+}
+
+/* 详情页 */
+.landz_txt p {
+  display: flex;
+  width: 100%;
+  margin-top: 16px;
+  align-items: center;
+}
+.landz_txt p span {
+  width: 270px;
+  margin-right: 26px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.landz_txt p span:first-child label{
+  width: 65px!important;
+  /* text-align: center; */
+  /* text-align-last: justify; */
+  text-align:right;
+      text-justify:distribute-all-lines;/*ie6-8*/
+      text-align-last:justify;/* ie9*/
+      -moz-text-align-last:justify;/*ff*/
+      -webkit-text-align-last:justify;/*chrome 20+*/
+  position: relative;
+  white-space: normal;
+}
+.landz_txt p span label{
+  padding-right: 10px;
+  /* vertical-align: middle; */
+}
+.landz_txt p span label:after{
+  content: ':';
+  position: absolute;
+}
+
+/* 图标 */
+.noMes b{
+  font-size: 22px
+}
+
+
+/* 为元素 */
+.after_cont label{
+  position: relative
+}
+.after_cont label:after{
+  content: ':';
+  position: absolute;
+  right: 2px
+}
+.landz_doubleSize label:after{
+  /* top: 12%; */
+  line-height: 0px
+}
+
+/* 颜色 */
+.landz_red{
+  color:#fe0019
+}
+
+/* 上传图片列表 */
+.landz_upload{
+  width:100%
+}
+.landz_upload .el-form-item__content{
+  width: 90%
+}
+.landz_upload .fileWrap{
+  margin-bottom: 10px !important
+}
+.el-radio__label {
+  font-size: 13px
+}
+/* =================== */
+/* 详情分割 */
+.landz_bTitle .landz_bg{
+  background: #345388;
+  font-size: 14px;
+  padding: 0px 15px;
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 20px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block
+}
+
+.landz_bTitle{
+  height: 30px;
+  border-bottom: 1px solid #345388
+}
+
+ .landz_hTitle h5{
+  font-size: 14px;
+  padding: 8px 0;
+  color: #345388;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+ .landz_hTitle h5.landz_bg{
+  background: #f8f8f8;
+}
+.landz_hTitle h5 b{
+display: inline-block;
+  width: 4px;
+  height: 14px;
+  vertical-align: top;
+  margin-top: 3px;
+  margin-right: 7px;
+  border-radius: 4px;
+  background: #345388;
+}
+
+/* 清除样式 */
+.clearItem {
+  margin-bottom: 0 !important
+}
+.clearItem .el-form-item__content{
+  margin-left: 0 !important
+}
+.clearItem .el-icon-circle-close{
+  display: none
+}
+.clearItem .el-icon-circle-check{
+  display: none
+}
+
+/* 分页 */
+.el-pagination button.disabled{
+  display: none;
+}
+.el-pagination button span:not([class*=suffix]),
+.el-pager li.number{
+  width: 47px;
+  height: 22px;
+  line-height: 21px;
+  border: 1px #ddd solid ;
+  border-radius: 4px;
+  color: #666;
+  font-weight: normal;
+  font-size: 12px;
+
+}
+.el-pager li.number.active{
+  color: #fff;
+  background: #345388;
+}
+.el-pager li.active+li{
+  border-left: 1px #ddd solid ;
+}
+.el-pager li.number{
+  margin: 0 5px;
+}
+.el-pagination button, .el-pagination span:not([class*=suffix]){
+  height: 22px;
+  line-height: 22px;
+}
+.el-pagination .el-select .el-input .el-input__inner,
+.el-pagination__editor.el-input .el-input__inner{
+  height: 22px ;
+}
+/* button */
+button.landz_btn_base{
+  font-size: 12px;
+  padding: 0px 15px;
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 4px;
+  box-sizing: content-box;
+  color:#fff;
+  background: #345388;
+  text-align: center;
+  cursor: pointer;
+}
+button.landz_btn_base_min{
+  font-size: 12px;
+  padding: 0px 15px;
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 4px;
+  box-sizing: content-box;
+  color:#fff;
+  background: #345388;
+  text-align: center;
+  cursor: pointer;
+}
+button.landz_btn_base:hover{
+  background: rgba(93, 117, 160, 1) !important;
+}
+button.landz_btn_base_min:hover{
+  background: rgba(93, 117, 160, 1) !important;
+}
+button.landz_btn_line{
+  font-size: 12px;
+  padding: 0px 15px;
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 4px;
+  box-sizing: content-box;
+  color:#345388;
+  background: #fff;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ddd
+}
+button.landz_btn_line_min{
+  font-size: 12px;
+  padding: 0px 15px;
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 4px;
+  box-sizing: content-box;
+  color:#345388;
+  background: #fff;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ddd
+}
+button.landz_btn_line:hover{
+  border:1px solid #345388  !important;
+}
+button.landz_btn_line_min:hover{
+  border:1px solid #345388  !important;
+}
+/* 布局 */
+.el-main{
+  padding:0;
+}
+aside.el-aside{
+  width:5% !important;
+  margin-bottom:15px;
+  position: relative;
+  text-align: right
+}
+aside.el-aside > button {
+  position: absolute;
+  bottom:0;
+  right: 0
+}
+/* 区间输入框 */
+.landz_section .el-form-item__content{
+  /* width:100%; */
+}
+.landz_section .el-form-item__content .el-input{
+  float: left;
+  width:48%;
+}
+.landz_section .el-form-item__content .el-input:last-child{
+  width:48%;
+  float:right
+}
+.landz_section .el-form-item__content>span{
+  display: inline-block;
+  width:4%;
+  text-align: center
+}
+/* .landz_section_min .el-form-item__content{
+  width:170px
+}
+.landz_section_min .el-form-item__content .el-input{
+  width:80px;
+}
+.landz_section_min .el-form-item__content>span{
+  display: inline-block;
+  margin:0 -3px;
+  width:6px
+} */
+.landz_section .el-date-editor.el-input--suffix .el-input__inner {
+  padding-right: 15px;
+}
+.landz_section .el-date-editor.el-input--suffix .el-input__suffix i.el-input__icon {
+  width: 10px;
+  left:1px
+}
+.landz_section_min .el-date-editor.el-input--suffix .el-input__prefix {
+  left: -3px;
+  width:0px;
+  display: none
+}
+.landz_section_min .el-date-editor.el-input--suffix .el-input__inner {
+  padding-right: 6px;
+  padding-left: 1px;
+}
+.landz_section_min .el-date-editor.el-input--suffix .el-input__suffix i.el-input__icon {
+  width: 10px;
+  left:1px
+}
+/* 手机号带区号 */
+.landz_input_phone .el-input:nth-child(3){
+  width:78%;
+  float: right
+}
+.landz_input_phone .el-input:first-of-type{
+  width: 17%;
+  float: left
+}
+.landz_input_phone .el-form-item__content > span{
+  width: 4%;
+  text-align: center;
+  display: inline-block
+}
+.landz_input_phone .el-input:first-of-type .el-input__suffix {
+  display: none;
+}
+/* .landz_input_phone .landz_phoneD {
+  width: 50px;
+}
+.landz_input_phone .landz_phoneD .el-input__suffix {
+  display: none;
+}
+.landz_input_phone .el-checkbox__label {
+  padding-left: 0;
+}
+.landz_input_phone .landz_phoneL {
+  width: 190px;
+}
+.landz_input_phone span {
+  display: inline-block;
+  margin: 0 2px;
+}
+.landz_input_phone_min .landz_phoneD {
+  width: 50px;
+}
+.landz_input_phone_min .landz_phoneD .el-input__suffix {
+  display: none;
+}
+.landz_input_phone_min .el-checkbox__label {
+  padding-left: 0;
+}
+.landz_input_phone_min .landz_phoneL {
+  width: 110px;
+}
+.landz_input_phone_min span {
+  display: inline-block;
+  margin: 0 2px;
+} */
+/* 必填项标示和： */
+.landz_doubleSize.is-required label:before{
+  top:8px
+}
+/* 弹窗输入框 */
+.el-dialog__wrapper .landz_input_3 .el-form-item__content{
+  width:170px
+}
+.el-dialog__wrapper[sizes="1000px"] .landz_input_2 .el-form-item__content{
+  width:216px
+}
+.el-dialog__wrapper[sizes="700px"] .landz_input_2 .el-form-item__content{
+  width:170px
+}
+.el-dialog__wrapper[sizes="800px"] .landz_input_3 .el-form-item__content{
+  width:170px
+}
+
+
+.el-dialog__wrapper[sizes="1000px"] .landz_input_phone .landz_phoneL {
+  width: 156px;
+}
+.el-dialog__wrapper[sizes="800px"] .landz_input_phone .landz_phoneL {
+  width: 110px;
+}
+.el-dialog__wrapper[sizes="700px"] .landz_input_phone .landz_phoneL {
+  width: 110px;
+}
+.el-dialog__wrapper .landz_input_phone_min span {
+  display: inline-block;
+  margin: 0 -1px;
+}
+
+.el-dialog__wrapper[sizes="1000px"] .landz_section .el-form-item__content{
+  width:216px
+}
+.el-dialog__wrapper[sizes="1000px"] .landz_section .el-form-item__content .el-input{
+  width:103px;
+}
+.el-dialog__wrapper[sizes="1000px"] .landz_section_min .el-form-item__content{
+  width:170px
+}
+.el-dialog__wrapper[sizes="1000px"] .landz_section_min .el-form-item__content .el-input{
+  width:80px;
+}
+
+.el-dialog__wrapper[sizes="800px"] .landz_section .el-form-item__content{
+  width:170px
+}
+.el-dialog__wrapper[sizes="800px"] .landz_section .el-form-item__content .el-input{
+  width:80px;
+}
+.el-dialog__wrapper[sizes="800px"] .landz_section_min .el-form-item__content{
+  width:170px
+}
+.el-dialog__wrapper[sizes="800px"] .landz_section_min .el-form-item__content .el-input{
+  width:80px;
+}
+.el-dialog__wrapper[sizes="800px"] .landz_section .el-date-editor.el-input--suffix .el-input__prefix {
+  left: -3px;
+  width:0px;
+  display: none
+}
+.el-dialog__wrapper[sizes="700px"] .landz_section .el-date-editor.el-input--suffix .el-input__prefix {
+  left: -3px;
+  width:0px;
+  display: none
+}
+.el-dialog__wrapper[sizes="700px"] .landz_section .el-date-editor.el-input--suffix .el-input__inner {
+  padding-right: 6px;
+  padding-left: 1px;
+}
+.el-dialog__wrapper[sizes="800px"] .landz_section .el-date-editor.el-input--suffix .el-input__inner {
+  padding-right: 6px;
+  padding-left: 1px;
+}
+.el-dialog__wrapper[sizes="700px"] .landz_section .el-form-item__content{
+  width:170px
+}
+.el-dialog__wrapper[sizes="700px"] .landz_section .el-form-item__content .el-input{
+  width:80px;
+}
+.el-dialog__wrapper[sizes="700px"] .landz_section_min .el-form-item__content{
+  width:170px
+}
+.el-dialog__wrapper[sizes="700px"] .landz_section_min .el-form-item__content .el-input{
+  width:80px;
+}
+/* 颜色 */
+.landz_black{
+  color: #333 !important
+}
+.landz_grey{
+  color: #999 !important
+}
+.landz_blue{
+  color: #3E7DEF  !important
+}
+.landz_red{
+  color: #FE0019 !important
+}
+.landz_white{
+  color: #fff !important
+}
+/* margin-bottom */
+.landz_margBottom{
+  margin-bottom: 15px
+}
+/* cursor */
+.landz_cursor{
+  cursor: pointer
+}
+/* 面包屑 */
+.landz_locatedNow {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+  color: #999;
+}
+.landz_locatedNow span{
+  color:#333
+}
+/* 进度条 */
+.el-progress-bar__inner{
+  background-color: #49BA65
+}
+
+/*进度*/
+
+ .landz_auditSchedule {
+  width: 960px;
+  margin: 35px auto;
+}
+
+ .landz_auditSchedule li {
+  float: left;
+  position: relative;
+  width: 60px;
+  margin-right: 162px;
+}
+
+ .landz_auditSchedule li:last-child{
+  margin-right: 0;
+}
+
+ .landz_auditSchedule li dl {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #345388;
+}
+
+ .landz_auditSchedule li dl dt {
+  position: relative;
+  z-index: 4;
+  display: block;
+  background: url(../images/sprite.png) no-repeat;
+  width: 18px;
+  height: 18px;
+  margin: 10px auto;
+}
+
+ .landz_auditSchedule li dl dt {
+  background-position: -181px -46px;
+}
+
+ .landz_auditSchedule li.ongoing dl dt {
+  background-position: -159px -46px;
+}
+
+ .landz_auditSchedule li.ongoing~li dl dt {
+  background-image: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #9badca;
+  margin: 16px auto 14px;
+}
+
+ .landz_auditSchedule li.ongoing~li dl dd {
+  color: #9badca;
+}
+
+ .landz_auditSchedule li dl span.line {
+  position: absolute;
+  top: 10px;
+  left: 34px;
+  width: 214px;
+  height: 1px;
+}
+
+ .landz_auditSchedule li dl span.line {
+  background: #49BA65;
+}
+
+ .landz_auditSchedule li.ongoing dl span.line,
+ .landz_auditSchedule li.ongoing~li dl span.line {
+  background: #9badca;
+}
+
+.landz_auditSchedule li.ongoing~li dl span.line {
+  top: 4px;
+}
+.landz_auditSchedule .going dt{
+  background-position: -159px -46px !important
+}
+.landz_auditSchedule .going~li dt{
+  background-image: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid #999;
+  margin: 10px auto 14px;
+}
+.landz_auditSchedule .going dd span.line{
+  background: #ddd;
+}
+.landz_auditSchedule .going~li dd span.line{
+  top:10px;
+  background: #ddd;
+}
+/* 弹窗关闭按钮 */
+.el-message-box__headerbtn{
+  top: 5px;
+  right: 7px;
+}
+.el-message-box__btns{
+  text-align: center
+}
+.el-dialog__headerbtn{
+  top: 5px;
+  right: 7px;
+}
+.el-dialog .el-dialog__headerbtn{
+  top: 16px;
+  right: 16px;
+}
+
+/* 文本 */
+.landz_txt{
+  font-size: 12px;
+  color: #333;
+  line-height: 15px;
+  vertical-align: top
+}
+.landz_txt .el-col{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+}
+.landz_txt .el-row .el-col label{
+  padding-right: 10px;
+  position: relative
+}
+.landz_txt .el-row .el-col label:after{
+  content:':';
+  text-align: left;
+  position: absolute
+}
+.landz_txt .el-row .el-col label{
+  width:82px;
+  display: inline-block;
+  text-align:right;
+  white-space: normal;
+  vertical-align:middle;
+}
+.landz_txt .el-row .el-col:first-child label{
+  width:75px;
+  /* text-align-last: justify; */
+  text-align:right;
+      text-justify:distribute-all-lines;/*ie6-8*/
+      text-align-last:justify;/* ie9*/
+      -moz-text-align-last:justify;/*ff*/
+      -webkit-text-align-last:justify;/*chrome 20+*/
+  /* text-align: center; */
+  white-space: normal;
+}
+.landz_txt .landz_doubleSize{
+  line-height: 12px;
+  vertical-align:top;
+}
+.landz_txt .landz_doubleSize:after{
+  top:3px;
+}
+.landz_txt .el-row .el-col:nth-of-type(3) label{
+  width:100px;
+  white-space:nowrap;
+}
+.landz_txt  b{
+  display:inline-block;
+  max-width:50%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  vertical-align:middle;
+}
+
+/* el-ui */
+.el-form-item__label{
+  color:#333
+}
+.el-message-box__btns .el-button--default{
+  color:#345388 !important;
+  background-color:#fff !important;
+}
+.el-message-box__btns .el-button--default:hover{
+  border-color:#345388 !important;
+}
+.el-message-box__btns .el-button--primary{
+  color:#fff !important;
+  background-color:#345388 !important;
+  border-color: #345388 !important;
+}
+.el-message-box__btns .el-button--primary:hover{
+  background: rgba(93, 117, 160, 1) !important;
+  border-color: rgba(93, 117, 160, 1) !important;
+}
+
+.landz_checkBox .el-form-item__content{
+  width:auto
+}
+.landz_radio .el-form-item__content{
+  width:auto
+}
+.landz_checkBox .el-checkbox+.el-checkbox{
+  margin-left: 28px
+}
+
+/* 1.1 */
+/* .landz_label_5 .el-col label{
+  width:93px;
+  padding-right: 10px
+}
+.landz_label_5 .el-col .el-form-item__content{
+ margin-left: 93px
+}
+.landz_label_6 .el-col label{
+  width:98px;
+  padding-right: 10px
+}
+.landz_label_7 .el-col label{
+  width:109px;
+  padding-right: 10px
+}
+.landz_label_9 .el-col label{
+  width:135px;
+  padding-right: 10px
+} */
+
+
+
+
+
+
+/*==============Bug Fixed==============*/
+/*修复table组件因高度不为整数时出现纵向滚动条的问题*/
+.el-table__body-wrapper {
+  margin-top:1px!important;
+}
